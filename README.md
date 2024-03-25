@@ -1,0 +1,1 @@
+# vitest-file-snapshot-serializer
