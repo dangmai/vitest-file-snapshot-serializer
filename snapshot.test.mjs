@@ -1,6 +1,6 @@
-import { expect, it } from "vitest";
+import { it } from "vitest";
 
-it("should use custom serializer correctly", async () => {
+it("should use custom serializer correctly", async ({ expect }) => {
   expect.addSnapshotSerializer({
     serialize(val) {
       return "hi";
