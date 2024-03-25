@@ -1,6 +1,6 @@
 import { expect, it } from "vitest";
 
-it("should use custom serializer correctly", () => {
+it("should use custom serializer correctly", async () => {
   expect.addSnapshotSerializer({
     serialize(val) {
       return "hi";
@@ -10,5 +10,5 @@ it("should use custom serializer correctly", () => {
     },
   });
   expect("hello").toMatchInlineSnapshot(`hi`);
-  expect("hello").toMatchFileSnapshot("snapshot.txt");
+  await expect("hello").toMatchFileSnapshot("snapshot.txt");
 });
