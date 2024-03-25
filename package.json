@@ -1,0 +1,22 @@
+{
+  "name": "vitest-file-snapshot-serializer",
+  "version": "1.0.0",
+  "description": "Sample repo to show issue with Vitest custom Serializer.",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest snapshot.test.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/dangmai/vitest-file-snapshot-serializer.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dangmai/vitest-file-snapshot-serializer/issues"
+  },
+  "homepage": "https://github.com/dangmai/vitest-file-snapshot-serializer#readme",
+  "devDependencies": {
+    "vitest": "1.4.0"
+  }
+}
